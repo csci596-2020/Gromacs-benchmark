@@ -67,4 +67,4 @@ According to the table, while other costs are quite the same for 3 cartergories,
   <img src="https://github.com/hoatrinhusc/Gromacs-benchmark/blob/main/PME_breakdown.png"/>
 </figure>
  From the figure, we see that when we increase # of PME ranks to 4, there is a significant decrease in cost due to the speed up in PME mesh calculation. But when we increase # of PME ranks to 10, there is a significant increase in cost due to the slow down by the waiting time between PME ranks and PP ranks. 
- This analysis is, however, is not complete, since there are other factors like load balancing, etc... which we might study in the future.
+ This analysis, however, is not complete, since there are other factors like load imbalancing, etc... which we might consider in the future.
