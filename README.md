@@ -46,13 +46,19 @@ As a study case of MPI communication cost, I consider 20 MPI processes, each MPI
   <img src="https://github.com/hoatrinhusc/Gromacs-benchmark/blob/main/MPI_PME_xeonv4.png"/>
 </figure>
 
-| First Header  | Second Header |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+The table below breaks down the computing cost into the cost of each major component ( each accounts for more than 2% of total wall-clock time) . The cost is measured in the total Sum of Giga-Cycles.
 
 
-
+| Computing  | 20MPI-0PME | 20MPI-4PME |  20MPI-10PME |
+| ------------- | ------------- | ------------- | ------------- |
+| Domain decomp. | 72.341  | 48.588 | 40.588 |
+| Neighbor search  | 84.652 | 69.198 | 72.632 |
+|  Comm. coord. | 297.054 | 207.974 | 148.992 |
+| Force | 1887.417 | 1824.295 | 1735.850 |
+| Wait + Comm. F | 299.149 | 356.349 | 197.719 |
+| PME mesh | 2105.949 | 645.770 | 1136.321 |
+| PME wait for PP | 0 | 100.144 | 1219.859 |
+| Wait + Recv. PME F | 0 | 288.256 | 7.370 |
 
 
 
