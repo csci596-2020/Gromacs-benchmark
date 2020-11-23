@@ -7,7 +7,7 @@ Adaptive Neural Networks for electronic structure calculations.
 
 ## Methodology
 <figure>
-  <img src="" alt="the picture is adopted from [5]"/>
+  <img src="https://github.com/hoatrinhusc/Gromacs-benchmark/blob/main/1MPI-OpenMP.png"/>
 </figure>
 
 [The figure is adopted from [5]](https://www.nature.com/articles/s41467-018-07520-3)
