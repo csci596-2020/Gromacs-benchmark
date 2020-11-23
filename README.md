@@ -8,6 +8,7 @@ Gromacs benhmarking
 
 ## Methodology
 1. Strong scaling of OpenMP
+
 Intel(R) Xeon(R) Gold 6130 CPU @ 2.10GHz
 <figure>
   <img src="https://github.com/hoatrinhusc/Gromacs-benchmark/blob/main/1MPI-OpenMP.png"/>
