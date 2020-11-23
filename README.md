@@ -4,14 +4,10 @@ Adaptive Neural Networks for electronic structure calculations.
 
 ## Abstract
 
-Finding the exact solution to the Schrodinger equations of correlated fermionic systems has remained as a challenging problem due to the exponential growth in the dimension of the Hillbert space with the number of particles in the system. Only ground state energies of small molecules have been solved exactly (to chemical accuracy). Due to the Universal approximation theorem (Cybenko, 89; Hornik, 91) which states that A feedforward neural network with a single hidden layer can approximate any continuous functions, machine learning has emerged as a promissing tool to study complex fermionic systems. In the paper "Solving the quantum many-body problem with artificial neural networks" [1], Carleo et al shows that the same Restricted Boltzmann Machine can be used to represent the wavefunction for both Ising and Heisenberg models with high accuray. Also, in the paper "Machine learning phases of matter" [2], Juan et al shows that the neural network trained on a square-lattice ferromagnetic Ising model can surprisingly provide accurate prediction for triangular lattice. The evidence puts the question: How universal a neural network can actually be? In particular, the goal of this project is to  train an adaptive neural network which can be used to approximate the ground state energies and the wave functions for real physics system like small molecules to chemical accuracy. 
-
-## Hypothesis
-A well-trained adaptive neural network can be used universally to approximate the wavefunctions of small molecules to chemical accuracy (~ 1kcal/mol). 
 
 ## Methodology
 <figure>
-  <img src="https://github.com/hoatrinhusc/Adaptive-Neural-Networks-for-electronic-structure-calculation./blob/master/p3.png" alt="the picture is adopted from [5]"/>
+  <img src="" alt="the picture is adopted from [5]"/>
 </figure>
 
 [The figure is adopted from [5]](https://www.nature.com/articles/s41467-018-07520-3)
