@@ -49,7 +49,7 @@ To study the cost of MPI communication, I varies the number of MPI ranks dedicat
 | Content Cell  | Content Cell  |
 
 
-As a study case, I consider 20 MPI processes, each MPI process is on a different computing node. 
+As a study case, I consider 20 MPI processes, each MPI process is on a different computing node of xeon-2640v4. 1 OpenMP thread per rank.
 <figure>
   <img src="https://github.com/hoatrinhusc/Gromacs-benchmark/blob/main/MPI_PME.png"/>
 </figure>
