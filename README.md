@@ -2,8 +2,6 @@
 
 Gromacs benchmarking
 
-## Team Members:
-
 ## Gromacs introduction
 https://zenodo.org/record/3923644#.X7vessKIYaw
 
@@ -12,6 +10,11 @@ https://carc.usc.edu/user-information/user-guides/high-performance-computing/dis
 
 ## Methodology
 Study system: TRP-Cage, a protein with only 20 amino acids (PDB ID = 1L2Y)
+
+| MD System  | Second Header |
+| ------------- | ------------- |
+| # atoms | Content Cell  |
+| Box size  | Content Cell  |
 
 Using Gromacs version 2020.3 on Discovery cluster
 <figure>
