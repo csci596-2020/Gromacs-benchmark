@@ -1,6 +1,4 @@
-# Project Title
-
-Gromacs benchmarking
+# Project Title : Gromacs benchmarking
 
 ## Gromacs introduction
 https://zenodo.org/record/3923644#.X7vessKIYaw
@@ -28,7 +26,7 @@ Using Gromacs version 2020.3 installed on Discovery cluster.
 | Benchmark steps | 500000 |
 
 
-1. Strong scaling of OpenMP
+**1. Strong scaling of OpenMP**
 
 Intel(R) Xeon(R) Gold 6130 CPU @ 2.10GHz
 <figure>
@@ -37,7 +35,7 @@ Intel(R) Xeon(R) Gold 6130 CPU @ 2.10GHz
 
 Modern computers have a limited number of threads, but even if the number of threads are unlimited, we don't gain speed up due to strong scaling.
 
-2. MPI as a solution
+**2. MPI as a solution**
 
 To overcome strong scaling of OpenMP and gain speed up, MPI is used to connect different computing nodes. However, the price is the communication between MPI processes.
 
