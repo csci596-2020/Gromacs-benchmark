@@ -9,17 +9,24 @@ https://zenodo.org/record/3923644#.X7vessKIYaw
 https://carc.usc.edu/user-information/user-guides/high-performance-computing/discovery-resources?fbclid=IwAR3nNkJvUiTvLwBNyOsBtJD01cyuoDreeLG_GDIC-bAOSSrno6xCo_CvSMY
 
 ## Methodology
-Study system: TRP-Cage, a protein with only 20 amino acids (PDB ID = 1L2Y)
-
-| MD System  | Second Header |
-| ------------- | ------------- |
-| # atoms | Content Cell  |
-| Box size  | Content Cell  |
-
-Using Gromacs version 2020.3 on Discovery cluster
+Study system: TRP-Cage, a protein with only 20 amino acids (PDB ID = 1L2Y).
 <figure>
   <img src="https://github.com/hoatrinhusc/Gromacs-benchmark/blob/main/trp_vmd.png"/>
 </figure>
+
+
+Using Gromacs version 2020.3 installed on Discovery cluster.
+
+| MD System  | Trp-Cage |
+| ------------- | ------------- |
+| # atoms | 3809  |
+| System size (nm)  |  3.39x3.39x3.39 |
+| Time step (fs) | 2 |
+| Cut-off radii(nm) | 1 |
+| PME grid spacing(nm) | 0.16 |
+| Neighbor searching frequency | 10|
+| Benchmark steps | 500000 |
+
 
 1. Strong scaling of OpenMP
 
