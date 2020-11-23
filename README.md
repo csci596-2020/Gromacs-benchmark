@@ -41,7 +41,10 @@ To overcome strong scaling of OpenMP and gain speed up, MPI is used to connect d
 
 Gromacs uses the particle-mesh Ewald (PME) algorithms to treat the long-ranged component of the non-bonded interaction. Because the algorithm uses a 3D FFT that requires global communication, its parallel efficiency gets worse as more ranks participate. 
 
-To study the cost of MPI communication, I varies the number of MPI ranks dedicated for PME work and benchmark the cost of PME calculation.
+As a study case of MPI communication cost, I consider 20 MPI processes, each MPI process is on a different computing node of xeon-2640v4. 1 OpenMP thread per rank. Then, I varies the number of MPI ranks dedicated for PME work and benchmark MD performance.
+<figure>
+  <img src="https://github.com/hoatrinhusc/Gromacs-benchmark/blob/main/MPI_PME_xeonv4.png"/>
+</figure>
 
 | First Header  | Second Header |
 | ------------- | ------------- |
@@ -49,10 +52,7 @@ To study the cost of MPI communication, I varies the number of MPI ranks dedicat
 | Content Cell  | Content Cell  |
 
 
-As a study case, I consider 20 MPI processes, each MPI process is on a different computing node of xeon-2640v4. 1 OpenMP thread per rank.
-<figure>
-  <img src="https://github.com/hoatrinhusc/Gromacs-benchmark/blob/main/MPI_PME.png"/>
-</figure>
+
 
 
 
