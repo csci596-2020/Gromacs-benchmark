@@ -64,7 +64,7 @@ The table below breaks down the computing cost into the cost of each major compo
 According to the table, while other costs are quite the same for 3 cartergories, the PME cost are significantly different. So it makes sense that to study MPI communication cost for the TRP-Cage system, we can focus on PME cost. 
 
 <figure>
-  <img src="https://github.com/hoatrinhusc/Gromacs-benchmark/blob/main/MPI_PME_xeonv4.png"/>
+  <img src="https://github.com/hoatrinhusc/Gromacs-benchmark/blob/main/PME_breakdown.png"/>
 </figure>
  From the figure, we see that when we increase # of PME ranks to 4, there is a significant decrease in cost due to the speed up in PME mesh calculation. But when we increase # of PME ranks to 10, there is a significant increase in cost due to the slow down by the waiting time between PME ranks and PP ranks. 
  This analysis is, however, is not complete, since there are other factors like load balancing, etc... which we might study in the future.
