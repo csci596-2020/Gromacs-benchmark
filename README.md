@@ -21,16 +21,20 @@ Using Gromacs version 2020.3 installed on Discovery cluster.
 | System size (nm)  |  3.39x3.39x3.39 |
 | Time step (fs) | 2 |
 | Cut-off radii(nm) | 1 |
-| PME grid spacing(nm) | 0.16 |
+| PME grid spacing(nm) | 0.1 |
 | Neighbor searching frequency | 10|
-| Benchmark steps | 500000 |
+| Benchmark steps | 50000 |
 
 
 **1. Strong scaling of OpenMP**
 
 Intel(R) Xeon(R) Gold 6130 CPU @ 2.10GHz
 <figure>
-  <img src="https://github.com/hoatrinhusc/Gromacs-benchmark/blob/main/1MPI-OpenMP.png"/>
+  <img src="https://github.com/csci596-2020/Gromacs-benchmark/blob/main/1MPI-OpenMP.png"/>
+</figure>
+
+<figure>
+  <img src="https://github.com/csci596-2020/Gromacs-benchmark/blob/main/OpenMP_speedup.png"/>
 </figure>
 
 Modern computers have a limited number of threads, but even if the number of threads are unlimited, we don't gain speed up due to strong scaling.
